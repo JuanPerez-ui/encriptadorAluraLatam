@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/Logo.png" alt="Logo de Alura">
+    </header>
+    <main class="main">
+        <section class="main__cuadro">
+            <textarea class="main__cuadroDeTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí" ></textarea>
+            <div>
+            <!--   -->
+                <h6 class="main__mensaje"> 
+                    <img class="main__mensaje__exclamacion" src="/assets/bi_exclamation-circle-fill.png" alt="Simbolo de exclamación">
+                    Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="main__mensaje__botones">
+                <button onclick="btnEncriptar()" class="main__mensaje__botones__encriptar">Encriptar</a>
+                <button onclick="btnDesencriptar()" class="main__mensaje__botones__desencriptar">Desencriptar</a>
+            </div>
+        </section>
+        <section class="main__cuadroResultado">
+            <textarea class="main__cuadroResultado__resultado" cols="20" rows="10" placeholder="" ></textarea>
+
+            <div class="main__espacio">
+              <h2 class="main__cuadroResultado__titulo">Ningún mensaje fue encontrado</h2>
+                <p class="main__cuadroResultado__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+              <button onclick="btnCopiar()" class="main__cuadroResultado__botonCopiar">Copiar</button>  
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
